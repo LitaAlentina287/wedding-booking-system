@@ -12,11 +12,33 @@ Project ini menerapkan konsep **Full Stack Web Application** dengan menggunakan 
 
 # Tampilan Aplikasi
 
-## Halaman Home
+## Halaman Home (Pelanggan)
 
-Halaman utama menampilkan informasi awal mengenai layanan wedding booking, navigasi website, serta tombol menuju halaman paket dan booking.
+Halaman utama menampilkan informasi awal mengenai layanan **Wedding Booking System**, navigasi website, informasi layanan wedding, serta tombol menuju halaman paket dan booking.
 
-![Home Page](screenshots/home.png)
+Berikut merupakan tampilan halaman Home:
+
+### Tampilan Home 1
+
+![Home Page 1](screenshots/home1.png)
+
+---
+
+### Tampilan Home 2
+
+![Home Page 2](screenshots/home2.png)
+
+---
+
+### Tampilan Home 3
+
+![Home Page 3](screenshots/home3.png)
+
+---
+
+### Tampilan Home 4
+
+![Home Page 4](screenshots/home4.png)
 
 ---
 
