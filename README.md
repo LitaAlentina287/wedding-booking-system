@@ -72,11 +72,37 @@ Pada halaman ini pengguna dapat melihat daftar kategori sebelum memilih paket we
 
 ---
 
-## Halaman Packages
+## 2. Halaman Packages (Pelanggan)
 
-Halaman packages digunakan untuk menampilkan daftar paket wedding yang tersedia.
+Halaman Packages merupakan halaman yang digunakan pelanggan untuk melihat daftar paket wedding yang tersedia pada sistem.
 
-![Packages Page](screenshots/packages.png)
+Pada halaman ini, pengguna dapat melihat informasi detail mengenai paket wedding seperti nama paket, kategori, harga, gambar, dan deskripsi paket. Data paket tidak ditampilkan secara statis, tetapi diambil dari database melalui backend menggunakan REST API.
+
+Frontend Next.js melakukan request data paket menggunakan Axios ke endpoint API `/api/packages`, kemudian data yang diterima akan ditampilkan dalam bentuk card paket wedding.
+
+Halaman ini membantu pelanggan dalam memilih paket wedding yang sesuai sebelum melakukan proses booking.
+
+### Tampilan Packages 1
+
+![Packages 1](screenshots/Packages1.png)
+
+---
+
+### Tampilan Packages 2
+
+![Packages 2](screenshots/Packages2.png)
+
+---
+
+### Tampilan Packages 3
+
+![Packages 3](screenshots/Packages3.png)
+
+---
+
+### Tampilan Packages 4
+
+![Packages 4](screenshots/Packages4.png)
 
 ---
 
