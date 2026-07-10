@@ -9,7 +9,7 @@ https://youtu.be/HHrEaGeTJnw?si=aYTH8t9w6yaNy1p6
 
 Aplikasi ini memungkinkan pengguna untuk melihat berbagai paket wedding yang tersedia dan melakukan pemesanan secara mudah. Selain itu, admin dapat mengelola data kategori, paket wedding, serta data booking melalui halaman admin.
 
-Project ini menerapkan konsep **Full Stack Web Application** dengan menggunakan Next.js sebagai frontend, Express.js sebagai backend, PostgreSQL sebagai database, dan REST API sebagai komunikasi antara frontend dan backend.
+Project ini menerapkan konsep Full Stack Web Development dengan memanfaatkan Next.js + React untuk membangun antarmuka pengguna (frontend), Node.js + Express.js untuk mengembangkan layanan backend, PostgreSQL sebagai sistem manajemen basis data, serta REST API sebagai mekanisme pertukaran data antara frontend dan backend.
 
 ---
 
@@ -197,7 +197,7 @@ Halaman ini bersifat informatif dan tidak mengambil data dari database, karena k
 
 Halaman Contact merupakan halaman yang digunakan untuk memberikan informasi kontak yang dapat digunakan pelanggan apabila ingin menghubungi pihak wedding organizer.
 
-Pada halaman ini pengguna dapat melihat informasi seperti alamat, nomor kontak, email, serta media komunikasi yang tersedia. Halaman Contact dibuat untuk mempermudah pelanggan dalam mendapatkan informasi tambahan atau melakukan komunikasi terkait layanan wedding.
+Pada halaman ini pengguna dapat melihat informasi seperti alamat, nomor kontak, email, dan jam operasional. Halaman Contact dibuat untuk mempermudah pelanggan dalam mendapatkan informasi tambahan atau melakukan komunikasi terkait layanan wedding.
 
 Halaman ini bersifat informatif dan menggunakan data statis yang dibuat pada frontend menggunakan Next.js. Tidak terdapat proses pengambilan data dari database karena informasi kontak tidak berubah secara dinamis.
 
