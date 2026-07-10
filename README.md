@@ -253,6 +253,178 @@ Halaman ini bersifat informatif dan menggunakan data statis yang dibuat pada fro
 
 ---
 
+## 7. Halaman Login (Admin)
+
+Halaman Login Admin merupakan halaman autentikasi yang digunakan oleh administrator untuk masuk ke dalam sistem pengelolaan Wedding Booking System.
+
+Pada halaman ini admin memasukkan data login berupa username/email dan password. Data tersebut akan dikirimkan ke backend untuk dilakukan proses verifikasi melalui REST API.
+
+Jika data login sesuai dengan data yang tersimpan pada database PostgreSQL, maka admin berhasil masuk ke halaman Dashboard Admin. Namun, jika data yang dimasukkan tidak sesuai, sistem akan memberikan pesan bahwa proses login gagal.
+
+Halaman login ini berfungsi untuk menjaga keamanan sistem agar hanya pengguna dengan hak akses admin yang dapat mengelola data kategori, paket wedding, dan booking pelanggan.
+
+### Tampilan Login Admin
+
+![Login Admin](screenshots/login.png)
+
+---
+
+## 8. Halaman Dashboard (Admin)
+
+Halaman Dashboard Admin merupakan halaman utama yang ditampilkan setelah admin berhasil melakukan proses login.
+
+Dashboard berfungsi sebagai pusat informasi dan pengelolaan sistem Wedding Booking System. Pada halaman ini admin dapat melihat ringkasan data penting seperti jumlah kategori, jumlah paket wedding, jumlah booking, dan jumlah pelanggan.
+
+Selain menampilkan informasi statistik, dashboard juga menyediakan navigasi menuju halaman pengelolaan data seperti Categories, Packages, dan Booking Management.
+
+Data statistik pada dashboard diperoleh dari database PostgreSQL melalui backend Express.js menggunakan REST API. Frontend Next.js mengambil data tersebut menggunakan Axios kemudian menampilkan informasi dalam bentuk kartu statistik dan tabel agar mudah dipahami oleh admin.
+
+### Tampilan Dashboard Admin 1
+
+![Dashboard 1](screenshots/dashboard1.png)
+
+---
+
+### Tampilan Dashboard Admin 2
+
+![Dashboard 2](screenshots/dashboard2.png)
+
+---
+
+### Tampilan Dashboard Admin 3
+
+![Dashboard 3](screenshots/dashboard3.png)
+
+---
+
+## 10. Halaman Packages (Admin)
+
+Halaman Packages Admin digunakan untuk mengelola seluruh data paket wedding yang tersedia pada sistem. Halaman ini hanya dapat diakses oleh administrator setelah berhasil melakukan proses login.
+
+Pada halaman ini admin dapat melakukan operasi **CRUD (Create, Read, Update, Delete)** terhadap data paket wedding. Setiap paket terdiri dari beberapa informasi, seperti nama paket, kategori, harga, deskripsi, dan gambar paket.
+
+Seluruh data paket tersimpan pada database PostgreSQL dan dikelola melalui backend Express.js menggunakan REST API. Frontend Next.js menggunakan Axios untuk mengirim request ke backend sehingga setiap perubahan data dapat langsung tersimpan dan ditampilkan kembali pada sistem.
+
+### Fitur Halaman Packages Admin
+
+- Menampilkan seluruh data paket wedding.
+- Menambahkan paket wedding baru.
+- Mengunggah gambar paket.
+- Mengubah informasi paket.
+- Menghapus paket wedding.
+- Menampilkan data terbaru setelah proses CRUD berhasil.
+
+### Tampilan Packages Admin 1
+
+![Packages Admin 1](screenshots/packagesadmin1.png)
+
+---
+
+### Tampilan Packages Admin 2
+
+![Packages Admin 2](screenshots/packagesadmin2.png)
+
+---
+
+### Tampilan Packages Admin 3
+
+![Packages Admin 3](screenshots/packagesadmin3.png)
+
+---
+
+### Tampilan Packages Admin 4
+
+![Packages Admin 4](screenshots/packagesadmin4.png)
+
+---
+
+## 11. Halaman Bookings (Admin)
+
+Halaman Bookings Admin digunakan untuk mengelola seluruh data pemesanan (booking) yang dilakukan oleh pelanggan. Halaman ini hanya dapat diakses oleh administrator setelah berhasil melakukan proses login.
+
+Pada halaman ini admin dapat melihat seluruh data booking yang masuk, seperti nama pemesan, paket wedding yang dipilih, tanggal acara, lokasi acara, serta status pemesanan. Selain itu, admin juga dapat mengubah status booking sesuai dengan proses yang sedang berjalan.
+
+Seluruh data booking diambil dari database PostgreSQL melalui backend Express.js menggunakan REST API. Frontend Next.js memanfaatkan Axios untuk mengambil dan mengirim data sehingga informasi yang ditampilkan selalu sesuai dengan data yang tersimpan pada database.
+
+### Fitur Halaman Bookings Admin
+
+- Menampilkan seluruh data booking pelanggan.
+- Melihat detail informasi setiap booking.
+- Mengubah status booking menjadi **Pending**, **Diterima**, atau **Ditolak**.
+- Menampilkan data booking terbaru secara langsung setelah dilakukan perubahan.
+
+### Tampilan Bookings Admin 1
+
+![Bookings Admin 1](screenshots/bookingsadmin1.png)
+
+---
+
+### Tampilan Bookings Admin 2
+
+![Bookings Admin 2](screenshots/bookingsadmin2.png)
+
+---
+
+### Tampilan Bookings Admin 3
+
+![Bookings Admin 3](screenshots/bookingsadmin3.png)
+
+---
+
+### Tampilan Bookings Admin 4
+
+![Bookings Admin 4](screenshots/bookingsadmin4.png)
+
+---
+
+## 12. Halaman Profile (Admin)
+
+Halaman Profile Admin digunakan untuk menampilkan informasi akun administrator yang sedang login ke dalam sistem Wedding Booking System.
+
+Pada halaman ini admin dapat melihat informasi profil seperti nama, username, email, dan data akun lainnya. Selain menampilkan informasi profil, halaman ini juga menyediakan fitur untuk memperbarui data profil atau mengganti password sesuai dengan kebutuhan.
+
+Data profil diambil dari database PostgreSQL melalui backend Express.js menggunakan REST API. Frontend Next.js menggunakan Axios untuk mengambil dan mengirim data sehingga setiap perubahan yang dilakukan admin akan langsung tersimpan pada database.
+
+### Fitur Halaman Profile Admin
+
+- Menampilkan informasi akun administrator.
+- Memperbarui data profil admin.
+- Mengubah password akun admin.
+- Menyimpan perubahan data ke database melalui REST API.
+
+### Tampilan Profile Admin 1
+
+![Profile Admin 1](screenshots/profile1.png)
+
+---
+
+### Tampilan Profile Admin 2
+
+![Profile Admin 2](screenshots/profile2.png)
+
+---
+
+## 13. Halaman Logout (Admin)
+
+Halaman Logout digunakan untuk mengakhiri sesi login administrator sehingga akun dapat keluar dari sistem dengan aman.
+
+Sebelum proses logout dilakukan, sistem menampilkan kotak dialog konfirmasi (SweetAlert) untuk memastikan bahwa admin benar-benar ingin keluar dari aplikasi. Jika admin memilih **Ya**, maka sesi login akan dihapus dan pengguna akan diarahkan kembali ke halaman Login Admin. Sebaliknya, jika memilih **Batal**, admin tetap berada di halaman yang sedang dibuka.
+
+Fitur logout bertujuan untuk menjaga keamanan sistem, terutama agar akun administrator tidak tetap aktif ketika aplikasi ditinggalkan atau digunakan oleh orang lain.
+
+### Fitur Halaman Logout
+
+- Menampilkan popup konfirmasi menggunakan **SweetAlert2**.
+- Menghapus sesi login admin.
+- Mengarahkan pengguna kembali ke halaman Login Admin.
+- Membatalkan proses logout apabila admin memilih **Batal**.
+
+### Tampilan Logout Admin
+
+![Logout Admin](screenshots/logout.png)
+
+---
+
 # Fitur Aplikasi
 
 ## Customer
