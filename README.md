@@ -575,11 +575,12 @@ npm install
 Buat file `.env` pada folder server:
 
 ```env
+PORT=5000
 DB_HOST=localhost
-DB_USER=postgres
-DB_PASSWORD=password_database
-DB_NAME=wedding_booking
 DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=your_password
+DB_NAME=wedding_booking
 ```
 
 Jalankan backend:
@@ -664,5 +665,5 @@ GitHub:
 
 https://github.com/LitaAlentina287/wedding-booking-system
 
-```
-```
+Youtube Video Demonstrasi aplikasi:
+
