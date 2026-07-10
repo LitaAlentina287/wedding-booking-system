@@ -549,9 +549,12 @@ API digunakan sebagai penghubung antara frontend Next.js dengan backend Express.
 
 Pastikan sudah menginstall:
 
-* Node.js
-* PostgreSQL
-* Git
+| Software | Versi (Disarankan) |
+|----------|---------------------|
+| Node.js | v18 atau lebih baru |
+| PostgreSQL | v15 atau lebih baru |
+| Git | Versi terbaru |
+
 
 ---
 
