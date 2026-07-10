@@ -84,25 +84,25 @@ Halaman ini membantu pelanggan dalam memilih paket wedding yang sesuai sebelum m
 
 ### Tampilan Packages 1
 
-![Packages 1](screenshots/Packages1.png)
+![Packages 1](screenshots/packages1.png)
 
 ---
 
 ### Tampilan Packages 2
 
-![Packages 2](screenshots/Packages2.png)
+![Packages 2](screenshots/packages2.png)
 
 ---
 
 ### Tampilan Packages 3
 
-![Packages 3](screenshots/Packages3.png)
+![Packages 3](screenshots/packages3.png)
 
 ---
 
 ### Tampilan Packages 4
 
-![Packages 4](screenshots/Packages4.png)
+![Packages 4](screenshots/packages4.png)
 
 ---
 
