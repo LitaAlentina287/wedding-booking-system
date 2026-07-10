@@ -656,8 +656,8 @@ Universitas Teknologi Bandung
 # Repository
 
 GitHub:
-
 https://github.com/LitaAlentina287/wedding-booking-system
 
 Youtube Video Demonstrasi aplikasi:
+https://youtu.be/HHrEaGeTJnw?si=aYTH8t9w6yaNy1p6
 
