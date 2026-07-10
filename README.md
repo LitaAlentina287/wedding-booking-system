@@ -1,5 +1,8 @@
 # Wedding Booking System
 
+Link Video Demonstrasi:
+https://youtu.be/HHrEaGeTJnw?si=aYTH8t9w6yaNy1p6
+
 ## Deskripsi Aplikasi
 
 **Wedding Booking System** merupakan aplikasi berbasis web yang dibuat untuk membantu proses pemesanan layanan wedding secara online.
@@ -368,16 +371,7 @@ Seluruh data booking diambil dari database PostgreSQL melalui backend Express.js
 
 Halaman Profile Admin digunakan untuk menampilkan informasi akun administrator yang sedang login ke dalam sistem Wedding Booking System.
 
-Pada halaman ini admin dapat melihat informasi profil seperti nama, username, email, dan data akun lainnya. Selain menampilkan informasi profil, halaman ini juga menyediakan fitur untuk memperbarui data profil atau mengganti password sesuai dengan kebutuhan.
-
-Data profil diambil dari database PostgreSQL melalui backend Express.js menggunakan REST API. Frontend Next.js menggunakan Axios untuk mengambil dan mengirim data sehingga setiap perubahan yang dilakukan admin akan langsung tersimpan pada database.
-
-### Fitur Halaman Profile Admin
-
-- Menampilkan informasi akun administrator.
-- Memperbarui data profil admin.
-- Mengubah password akun admin.
-- Menyimpan perubahan data ke database melalui REST API.
+Pada halaman ini admin dapat melihat informasi profil seperti nama, email, dan no telepon. Selain menampilkan informasi profil, halaman ini juga menyediakan fitur untuk memperbarui data profil.
 
 ### Tampilan Profile Admin 1
 
@@ -395,7 +389,7 @@ Data profil diambil dari database PostgreSQL melalui backend Express.js mengguna
 
 Halaman Logout digunakan untuk mengakhiri sesi login administrator sehingga akun dapat keluar dari sistem dengan aman.
 
-Sebelum proses logout dilakukan, sistem menampilkan kotak dialog konfirmasi (SweetAlert) untuk memastikan bahwa admin benar-benar ingin keluar dari aplikasi. Jika admin memilih **Ya**, maka sesi login akan dihapus dan pengguna akan diarahkan kembali ke halaman Login Admin. Sebaliknya, jika memilih **Batal**, admin tetap berada di halaman yang sedang dibuka.
+Sebelum proses logout dilakukan, sistem menampilkan kotak dialog konfirmasi (SweetAlert) untuk memastikan bahwa admin benar-benar ingin keluar dari aplikasi. Jika admin memilih **Logout**, maka sesi login akan dihapus dan pengguna akan diarahkan kembali ke halaman home pelanggan. Sebaliknya, jika memilih **Batal**, admin tetap berada di halaman yang sedang dibuka.
 
 Fitur logout bertujuan untuk menjaga keamanan sistem, terutama agar akun administrator tidak tetap aktif ketika aplikasi ditinggalkan atau digunakan oleh orang lain.
 
@@ -403,7 +397,7 @@ Fitur logout bertujuan untuk menjaga keamanan sistem, terutama agar akun adminis
 
 - Menampilkan popup konfirmasi menggunakan **SweetAlert2**.
 - Menghapus sesi login admin.
-- Mengarahkan pengguna kembali ke halaman Login Admin.
+- Mengarahkan pengguna kembali ke halaman home pelanggan.
 - Membatalkan proses logout apabila admin memilih **Batal**.
 
 ### Tampilan Logout Admin
