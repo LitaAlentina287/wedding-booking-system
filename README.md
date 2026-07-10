@@ -190,6 +190,56 @@ Halaman ini bersifat informatif dan tidak mengambil data dari database, karena k
 
 ---
 
+## 6. Halaman Contact (Pelanggan)
+
+Halaman Contact merupakan halaman yang digunakan untuk memberikan informasi kontak yang dapat digunakan pelanggan apabila ingin menghubungi pihak wedding organizer.
+
+Pada halaman ini pengguna dapat melihat informasi seperti alamat, nomor kontak, email, serta media komunikasi yang tersedia. Halaman Contact dibuat untuk mempermudah pelanggan dalam mendapatkan informasi tambahan atau melakukan komunikasi terkait layanan wedding.
+
+Halaman ini bersifat informatif dan menggunakan data statis yang dibuat pada frontend menggunakan Next.js. Tidak terdapat proses pengambilan data dari database karena informasi kontak tidak berubah secara dinamis.
+
+### Tampilan Contact 1
+
+![Contact 1](screenshots/contact1.png)
+
+---
+
+### Tampilan Contact 2
+
+![Contact 2](screenshots/contact2.png)
+
+---
+
+### Tampilan Contact 3
+
+![Contact 3](screenshots/contact3.png)
+
+---
+
+### Tampilan Contact 4
+
+![Contact 4](screenshots/contact4.png)
+
+---
+
+### Tampilan Contact 5
+
+![Contact 5](screenshots/contact5.png)
+
+---
+
+### Tampilan Contact 6
+
+![Contact 6](screenshots/contact6.png)
+
+---
+
+### Tampilan Contact 7
+
+![Contact 7](screenshots/contact7.png)
+
+---
+
 # Teknologi yang Digunakan
 
 | Bagian      | Teknologi            |
