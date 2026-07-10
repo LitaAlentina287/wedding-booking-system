@@ -1,0 +1,18 @@
+# Dependencies
+client/node_modules/
+server/node_modules/
+
+# Environment
+server/.env
+client/.env
+
+# Next.js
+client/.next/
+
+# Build
+client/dist/
+client/build/
+server/dist/
+
+# Log
+*.log
