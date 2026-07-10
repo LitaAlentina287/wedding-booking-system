@@ -12,7 +12,7 @@ Project ini menerapkan konsep **Full Stack Web Application** dengan menggunakan 
 
 # Tampilan Aplikasi
 
-## Halaman Home (Pelanggan)
+## 1. Halaman Home (Pelanggan)
 
 Halaman utama menampilkan informasi awal mengenai layanan **Wedding Booking System**, navigasi website, informasi layanan wedding, serta tombol menuju halaman paket dan booking.
 
@@ -39,6 +39,36 @@ Berikut merupakan tampilan halaman Home:
 ### Tampilan Home 4
 
 ![Home Page 4](screenshots/home4.png)
+
+---
+
+## 2. Halaman Categories (Pelanggan)
+
+Halaman Categories digunakan untuk menampilkan informasi kategori layanan wedding yang tersedia. Data kategori diambil dari database PostgreSQL melalui backend Express.js menggunakan endpoint REST API.
+
+Pada halaman ini pengguna dapat melihat daftar kategori sebelum memilih paket wedding yang tersedia.
+
+### Tampilan Categories 1
+
+![Categories 1](screenshots/categories1.png)
+
+---
+
+### Tampilan Categories 2
+
+![Categories 2](screenshots/categories2.png)
+
+---
+
+### Tampilan Categories 3
+
+![Categories 3](screenshots/categories3.png)
+
+---
+
+### Tampilan Categories 4
+
+![Categories 4](screenshots/categories4.png)
 
 ---
 
