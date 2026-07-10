@@ -1,0 +1,870 @@
+/* ==================================================
+   CATEGORIES PAGE
+================================================== */
+
+.catx-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 35px;
+
+    background: #f6f7fb;
+
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   PAGE LOADING
+================================================== */
+
+.catx-loading {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f6f7fb;
+}
+
+.catx-loading h2 {
+    color: #555;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* ==================================================
+   PAGE HEADER
+================================================== */
+
+.catx-header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 24px;
+
+    margin-bottom: 35px;
+}
+
+.catx-header-left {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.catx-header-icon {
+    width: 72px;
+    height: 72px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #b88b17
+    );
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    box-shadow: 0 10px 25px rgba(212,175,55,.30);
+}
+
+.catx-header-content {
+    min-width: 0;
+}
+
+.catx-header-content h1 {
+    margin: 0 0 8px;
+
+    color: #222;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+.catx-header-content p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   ADD BUTTON
+================================================== */
+
+.catx-add-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+
+    min-width: 190px;
+
+    padding: 14px 24px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #b88b17
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: all .30s ease;
+
+    box-shadow: 0 10px 25px rgba(212,175,55,.25);
+}
+
+.catx-add-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 15px 30px rgba(212,175,55,.35);
+}
+
+.catx-add-button svg {
+    font-size: 15px;
+}
+
+
+/* ==================================================
+   STATISTICS
+================================================== */
+
+.catx-stat-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px,1fr));
+
+    gap: 22px;
+
+    margin-bottom: 35px;
+}
+
+.catx-stat-card {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 22px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+
+    transition: all .30s ease;
+}
+
+.catx-stat-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.10);
+}
+
+.catx-stat-icon {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+
+    background: #fff8e3;
+
+    color: #d4af37;
+
+    font-size: 28px;
+}
+
+.catx-stat-content {
+    min-width: 0;
+}
+
+.catx-stat-content h3 {
+    margin: 0 0 5px;
+
+    color: #222;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.catx-stat-content p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+/* ==================================================
+   TABLE CARD
+================================================== */
+
+.catx-table-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #ececec;
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+}
+
+
+/* ==================================================
+   TABLE HEADER
+================================================== */
+
+.catx-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 24px 30px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.catx-table-header h2 {
+    margin: 0 0 6px;
+
+    color: #222;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.catx-table-header p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   TABLE WRAPPER
+================================================== */
+
+.catx-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* ==================================================
+   TABLE
+================================================== */
+
+.catx-table {
+    width: 100%;
+    min-width: 760px;
+
+    border-collapse: collapse;
+}
+
+.catx-table thead th {
+    padding: 18px;
+
+    background: #fafafa;
+
+    color: #444;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #ececec;
+}
+
+.catx-table tbody td {
+    padding: 18px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #555;
+
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.catx-table tbody tr {
+    transition: background .25s ease;
+}
+
+.catx-table tbody tr:hover {
+    background: #fffdf7;
+}
+
+
+/* ==================================================
+   CATEGORY NAME
+================================================== */
+
+.catx-category-name {
+    color: #222;
+
+    font-weight: 600;
+
+    word-break: break-word;
+}
+
+
+/* ==================================================
+   ACTION BUTTON GROUP
+================================================== */
+
+.catx-action-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: nowrap;
+}
+
+
+/* ==================================================
+   ACTION BUTTON
+================================================== */
+
+.catx-edit-button,
+.catx-delete-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    min-width: 95px;
+    height: 42px;
+
+    padding: 0 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.catx-edit-button {
+    background: #0d6efd;
+}
+
+.catx-edit-button:hover:not(:disabled) {
+    background: #0b5ed7;
+
+    transform: translateY(-2px);
+}
+
+.catx-delete-button {
+    background: #dc3545;
+}
+
+.catx-delete-button:hover:not(:disabled) {
+    background: #bb2d3b;
+
+    transform: translateY(-2px);
+}
+
+.catx-edit-button:disabled,
+.catx-delete-button:disabled {
+    opacity: .65;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* ==================================================
+   EMPTY STATE
+================================================== */
+
+.catx-empty-state {
+    padding: 70px 25px !important;
+
+    text-align: center;
+}
+
+.catx-empty-icon {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #fff8e3;
+
+    color: #d4af37;
+
+    font-size: 42px;
+}
+
+.catx-empty-state h3 {
+    margin-bottom: 12px;
+
+    color: #222;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.catx-empty-state p {
+    max-width: 450px;
+
+    margin: 0 auto 30px;
+
+    color: #777;
+
+    line-height: 1.8;
+}
+
+
+/* ==================================================
+   EMPTY BUTTON
+================================================== */
+
+.catx-empty-button {
+    min-width: 210px;
+}
+
+/* ==================================================
+   MODAL OVERLAY
+================================================== */
+
+.catx-modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, .55);
+
+    backdrop-filter: blur(6px);
+
+    z-index: 9999;
+
+    animation: catxFade .25s ease;
+}
+
+
+/* ==================================================
+   MODAL
+================================================== */
+
+.catx-modal {
+    width: 100%;
+    max-width: 560px;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.20);
+
+    animation: catxModal .30s ease;
+}
+
+
+/* ==================================================
+   MODAL HEADER
+================================================== */
+
+.catx-modal-header {
+    margin-bottom: 25px;
+}
+
+.catx-modal-header h2 {
+    margin: 0 0 8px;
+
+    color: #222;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.catx-modal-header p {
+    margin: 0;
+
+    color: #777;
+
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   FORM
+================================================== */
+
+.catx-form {
+    width: 100%;
+}
+
+.catx-form-group {
+    margin-bottom: 20px;
+}
+
+.catx-form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #333;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.catx-form-group input,
+.catx-form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    transition: all .25s ease;
+}
+
+.catx-form-group textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+.catx-form-group input:focus,
+.catx-form-group textarea:focus {
+    border-color: #d4af37;
+
+    box-shadow: 0 0 0 4px rgba(212,175,55,.15);
+}
+
+
+/* ==================================================
+   INFO BOX
+================================================== */
+
+.catx-info-box {
+    margin-top: 25px;
+
+    padding: 18px 20px;
+
+    border-left: 4px solid #d4af37;
+    border-radius: 12px;
+
+    background: #fffaf0;
+}
+
+.catx-info-box strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #222;
+}
+
+.catx-info-box p {
+    margin: 0;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   MODAL ACTION
+================================================== */
+
+.catx-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.catx-cancel-button,
+.catx-save-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 140px;
+    height: 46px;
+
+    padding: 0 24px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+.catx-cancel-button {
+    background: #e9ecef;
+
+    color: #444;
+}
+
+.catx-cancel-button:hover:not(:disabled) {
+    background: #dfe3e7;
+}
+
+.catx-save-button {
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #b88b17
+    );
+
+    color: #ffffff;
+}
+
+.catx-save-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 25px rgba(212,175,55,.30);
+}
+
+.catx-cancel-button:disabled,
+.catx-save-button:disabled {
+    opacity: .65;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* ==================================================
+   ANIMATION
+================================================== */
+
+@keyframes catxFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes catxModal {
+
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 992px) {
+
+    .catx-page {
+        padding: 28px;
+    }
+
+    .catx-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .catx-add-button {
+        align-self: flex-start;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .catx-page {
+        padding: 22px;
+    }
+
+    .catx-header-left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .catx-header-content h1 {
+        font-size: 27px;
+    }
+
+    .catx-modal {
+        padding: 24px;
+    }
+
+    .catx-action-group {
+        flex-direction: column;
+    }
+
+    .catx-edit-button,
+    .catx-delete-button {
+        width: 100%;
+    }
+
+    .catx-table {
+        min-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .catx-page {
+        padding: 18px;
+    }
+
+    .catx-header-icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 24px;
+    }
+
+    .catx-header-content h1 {
+        font-size: 24px;
+    }
+
+    .catx-add-button {
+        width: 100%;
+    }
+
+    .catx-modal-actions {
+        flex-direction: column;
+    }
+
+    .catx-cancel-button,
+    .catx-save-button {
+        width: 100%;
+    }
+
+    .catx-modal {
+        padding: 20px;
+    }
+
+}

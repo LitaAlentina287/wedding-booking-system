@@ -1,0 +1,398 @@
+/* ==================================================
+   PACKAGES PAGE
+================================================== */
+
+.packages-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+
+/* ==================================================
+   HERO SECTION
+================================================== */
+
+.packages-hero {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    min-height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 120px 20px;
+
+    text-align: center;
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("/images/pelanggan.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.packages-hero::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 90px;
+
+    background: linear-gradient(
+        transparent,
+        #f7f7f7
+    );
+}
+
+.packages-hero h1 {
+    font-size: 54px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    text-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+}
+
+.packages-hero p {
+    max-width: 720px;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    text-shadow: 0 3px 10px rgba(0, 0, 0, .35);
+}
+
+
+/* ==================================================
+   CONTENT
+================================================== */
+
+.packages-content {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 90px 20px;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #222;
+
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+
+/* ==================================================
+   PACKAGE GRID
+================================================== */
+
+.package-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+
+    gap: 35px;
+}
+
+
+/* ==================================================
+   CARD
+================================================== */
+
+.package-card {
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+
+    transition: .35s;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 45px rgba(0,0,0,.16);
+}
+
+
+/* ==================================================
+   IMAGE
+================================================== */
+
+.package-image {
+    width: 100%;
+    height: 240px;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.package-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ==================================================
+   BODY
+================================================== */
+
+.package-body {
+    padding: 28px;
+}
+
+
+/* ==================================================
+   CATEGORY BADGE
+================================================== */
+
+.category-badge {
+    display: inline-block;
+
+    background: #fff4d4;
+
+    color: #b8860b;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    padding: 7px 16px;
+
+    border-radius: 30px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ==================================================
+   TITLE
+================================================== */
+
+.package-body h3 {
+    font-size: 25px;
+
+    color: #222;
+
+    margin-bottom: 12px;
+}
+
+
+/* ==================================================
+   PRICE
+================================================== */
+
+.package-body h4 {
+    color: #d4af37;
+
+    font-size: 28px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ==================================================
+   DESCRIPTION
+================================================== */
+
+.package-body p {
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+    min-height: 95px;
+
+    margin-bottom: 28px;
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.book-button {
+    display: inline-block;
+
+    width: 100%;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    background: #d4af37;
+
+    color: #ffffff;
+
+    padding: 14px;
+
+    border-radius: 40px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.book-button:hover {
+    background: #b8860b;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   LOADING & EMPTY
+================================================== */
+
+.loading,
+.empty {
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.loading h3,
+.empty h3 {
+    color: #777;
+
+    font-weight: 500;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 992px) {
+
+    .packages-hero {
+        min-height: 45vh;
+
+        padding: 100px 20px;
+
+        background-attachment: scroll;
+    }
+
+    .packages-hero h1 {
+        font-size: 44px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .packages-hero {
+        padding: 90px 20px;
+    }
+
+    .packages-hero h1 {
+        font-size: 34px;
+    }
+
+    .packages-hero p {
+        font-size: 16px;
+    }
+
+    .packages-content {
+        padding: 70px 20px;
+    }
+
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .package-image {
+        height: 220px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .packages-hero {
+        min-height: 40vh;
+
+        padding: 70px 15px;
+    }
+
+    .packages-hero h1 {
+        font-size: 28px;
+    }
+
+    .packages-hero p {
+        font-size: 15px;
+    }
+
+    .packages-content {
+        padding: 60px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .package-body {
+        padding: 22px;
+    }
+
+    .package-body h3 {
+        font-size: 22px;
+    }
+
+    .package-body h4 {
+        font-size: 24px;
+    }
+
+}

@@ -1,0 +1,392 @@
+/* ==================================================
+   HOME PAGE
+================================================== */
+
+body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* ==================================================
+   HERO SECTION
+================================================== */
+
+.hero {
+  position: relative;
+
+  min-height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 120px 20px;
+
+  text-align: center;
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/images/wedding.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  font-weight: 700;
+
+  margin-bottom: 24px;
+
+  line-height: 1.2;
+
+  color: #d4af37;
+
+  text-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.hero p {
+  font-size: 19px;
+
+  line-height: 1.9;
+
+  margin-bottom: 40px;
+
+  color: rgba(255, 255, 255, 0.95);
+}
+
+
+/* ==================================================
+   HERO BUTTON
+================================================== */
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-booking {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 180px;
+
+  padding: 15px 34px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #d4af37;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #b8860b;
+
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #333333;
+}
+
+.btn-secondary:hover {
+  background: #f1f1f1;
+
+  transform: translateY(-3px);
+}
+
+
+/* ==================================================
+   FEATURES SECTION
+================================================== */
+
+.features {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 90px 20px;
+}
+
+.features h2 {
+  text-align: center;
+
+  color: #222;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  margin-bottom: 60px;
+}
+
+
+/* ==================================================
+   FEATURE GRID
+================================================== */
+
+.feature-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+
+/* ==================================================
+   FEATURE CARD
+================================================== */
+
+.feature-card {
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  padding: 40px 30px;
+
+  text-align: center;
+
+  border: 1px solid #eeeeee;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.35s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==================================================
+   FEATURE ICON
+================================================== */
+
+.feature-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: 0 auto 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #fff7e2;
+
+  color: #d4af37;
+
+  font-size: 34px;
+
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: #d4af37;
+
+  color: #ffffff;
+
+  transform: scale(1.08);
+}
+
+
+/* ==================================================
+   FEATURE TITLE
+================================================== */
+
+.feature-card h3 {
+  color: #222;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+
+/* ==================================================
+   FEATURE DESCRIPTION
+================================================== */
+
+.feature-card p {
+  color: #666;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* ==================================================
+   CTA SECTION
+================================================== */
+
+.cta {
+  background: #1f1f1f;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  padding: 90px 20px;
+}
+
+.cta h2 {
+  color: #d4af37;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.cta p {
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+.btn-booking {
+  background: #d4af37;
+  color: #ffffff;
+}
+
+.btn-booking:hover {
+  background: #b8860b;
+
+  transform: translateY(-3px);
+}
+
+
+/* ==================================================
+   RESPONSIVE - TABLET
+================================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    flex-direction: column;
+  }
+
+  .features {
+    padding: 70px 20px;
+  }
+
+  .features h2 {
+    font-size: 32px;
+  }
+
+  .cta h2 {
+    font-size: 34px;
+  }
+
+  .cta p {
+    font-size: 16px;
+  }
+}
+
+
+/* ==================================================
+   RESPONSIVE - MOBILE
+================================================== */
+
+@media (max-width: 480px) {
+
+  .hero {
+    min-height: 80vh;
+
+    padding: 80px 15px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-booking {
+    width: 100%;
+  }
+
+  .features h2 {
+    font-size: 28px;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+
+  .feature-icon {
+    width: 75px;
+    height: 75px;
+
+    font-size: 28px;
+  }
+
+  .cta {
+    padding: 70px 15px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+}

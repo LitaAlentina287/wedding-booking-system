@@ -1,0 +1,481 @@
+/* ==================================================
+   BOOKING PAGE
+================================================== */
+
+.booking-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* ==================================================
+   HERO SECTION
+================================================== */
+
+.booking-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 65vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 120px 20px 100px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.60)
+        ),
+        url("/images/pelanggan.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #ffffff;
+    z-index: 2;
+}
+
+/* ==================================================
+   HERO BOTTOM EFFECT
+================================================== */
+
+.booking-hero::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100px;
+
+    background: linear-gradient(
+        transparent,
+        #f8f9fa
+    );
+}
+
+/* ==================================================
+   HERO SUBTITLE
+================================================== */
+
+.hero-subtitle {
+    display: inline-block;
+
+    padding: 10px 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 50px;
+
+    background: rgba(212, 175, 55, 0.18);
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    color: #FFD86B;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    backdrop-filter: blur(10px);
+}
+
+/* ==================================================
+   HERO TITLE
+================================================== */
+
+.booking-hero h1 {
+    font-size: 58px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    text-shadow: 0 4px 12px rgba(0,0,0,.30);
+}
+
+/* ==================================================
+   HERO DESCRIPTION
+================================================== */
+
+.booking-hero p {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 19px;
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,.95);
+}
+
+/* ==================================================
+   CONTENT
+================================================== */
+
+.booking-content {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 20px;
+}
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    display: inline-block;
+
+    padding: 8px 22px;
+
+    margin-bottom: 18px;
+
+    border-radius: 30px;
+
+    background: #fff4d4;
+
+    color: #b8860b;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+
+    color: #222;
+
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+/* ==================================================
+   ANIMATION
+================================================== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-subtitle,
+.booking-hero h1,
+.booking-hero p {
+    animation: fadeUp .8s ease;
+}
+
+/* ==================================================
+   BOOKING CONTAINER
+================================================== */
+
+.booking-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ==================================================
+   BOOKING FORM CARD
+================================================== */
+
+.booking-form {
+    background: #ffffff;
+
+    padding: 45px;
+
+    border-radius: 24px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.06);
+
+    transition: all .3s ease;
+}
+
+.booking-form:hover {
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.10);
+}
+
+/* ==================================================
+   FORM GROUP
+================================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+/* ==================================================
+   LABEL
+================================================== */
+
+.form-group label {
+    margin-bottom: 10px;
+
+    color: #333;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ==================================================
+   INPUT
+================================================== */
+
+.form-group input {
+    width: 100%;
+
+    height: 56px;
+
+    padding: 0 18px;
+
+    border: 2px solid #ececec;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-size: 15px;
+
+    transition: all .3s ease;
+}
+
+/* ==================================================
+   SELECT
+================================================== */
+
+.form-group select {
+    width: 100%;
+
+    height: 56px;
+
+    padding: 0 18px;
+
+    border: 2px solid #ececec;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+/* ==================================================
+   TEXTAREA
+================================================== */
+
+.form-group textarea {
+    width: 100%;
+
+    min-height: 140px;
+
+    padding: 16px 18px;
+
+    resize: vertical;
+
+    border: 2px solid #ececec;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    transition: all .3s ease;
+}
+
+/* ==================================================
+   PLACEHOLDER
+================================================== */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+/* ==================================================
+   FOCUS EFFECT
+================================================== */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 0 0 4px rgba(212,175,55,.12);
+}
+
+/* ==================================================
+   DISABLED
+================================================== */
+
+.form-group input:disabled,
+.form-group select:disabled,
+.form-group textarea:disabled {
+    background: #f5f5f5;
+
+    color: #888;
+
+    cursor: not-allowed;
+}
+
+/* ==================================================
+   DATE INPUT
+================================================== */
+
+.form-group input[type="date"] {
+    cursor: pointer;
+}
+
+/* ==================================================
+   BOOKING BUTTON
+================================================== */
+
+.booking-button {
+    width: 100%;
+
+    height: 58px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #b8860b
+    );
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    margin-top: 10px;
+}
+
+.booking-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(212,175,55,.35);
+}
+
+.booking-button:active {
+    transform: scale(.98);
+}
+
+.booking-button:disabled {
+    background: #cfcfcf;
+
+    cursor: wait;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+/* ==================================================
+   FORM MESSAGE
+================================================== */
+
+.form-message {
+    margin-top: 20px;
+
+    padding: 14px 18px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.form-message.success {
+    background: #e8f8ee;
+
+    border: 1px solid #b7e4c7;
+
+    color: #1d6b3c;
+}
+
+.form-message.error {
+    background: #fdeaea;
+
+    border: 1px solid #f3c1c1;
+
+    color: #a12c2c;
+}

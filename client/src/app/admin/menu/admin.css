@@ -1,0 +1,32 @@
+.admin-layout{
+    display:flex;
+    min-height:100vh;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.15),
+            rgba(255,255,255,0.15)
+        ),
+        url("/images/background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.admin-content{
+    flex:1;
+
+    margin-left:250px;
+
+    min-height:100vh;
+
+    padding:30px;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.82),
+            rgba(255,255,255,0.82)
+        );
+}

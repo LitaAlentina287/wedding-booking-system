@@ -1,0 +1,499 @@
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+    margin-top:70px;
+    background:#1b1b1b;
+    color:#ffffff;
+}
+
+.footer-container{
+
+    width:min(92%,1280px);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1.2fr
+        1.2fr;
+
+    gap:50px;
+
+    padding:60px 0 45px;
+}
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.footer-section{
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    text-align:left;
+}
+
+.footer-section h2{
+
+    margin:0 0 20px;
+
+    color:#d4af37;
+
+    font-size:34px;
+
+    font-weight:700;
+}
+
+.footer-section h3{
+
+    margin:0 0 22px;
+
+    color:#d4af37;
+
+    font-size:24px;
+
+    font-weight:700;
+}
+
+.footer-section h4{
+
+    margin:20px 0 12px;
+
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-weight:600;
+}
+
+.footer-section p{
+
+    margin:0 0 12px;
+
+    color:#d6d6d6;
+
+    line-height:1.9;
+
+    font-size:15px;
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.footer-section ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+    width:100%;
+}
+
+.footer-section ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:16px;
+}
+
+.footer-section ul li svg{
+
+    width:18px;
+
+    color:#d4af37;
+
+    flex-shrink:0;
+}
+
+.footer-section ul li span{
+
+    color:#e4e4e4;
+}
+
+.footer-section ul li a{
+
+    color:#e4e4e4;
+
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+.footer-section ul li a:hover{
+
+    color:#d4af37;
+
+    padding-left:4px;
+}
+
+/* ==========================================================
+   CONTACT
+========================================================== */
+
+.footer-contact{
+
+    width:100%;
+}
+
+.footer-contact p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:12px;
+}
+
+.footer-contact svg{
+
+    width:18px;
+
+    color:#d4af37;
+
+    flex-shrink:0;
+}
+
+.footer-contact h4{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.footer-contact h4 svg{
+
+    color:#d4af37;
+}
+
+/* ==========================================================
+   BOTTOM
+========================================================== */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:22px 0;
+
+    text-align:center;
+}
+
+.footer-bottom p{
+
+    margin:0;
+
+    color:#bdbdbd;
+
+    font-size:14px;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:992px){
+
+    .footer-container{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:40px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+        text-align:center;
+    }
+
+    .footer-section{
+
+        align-items:center;
+
+        text-align:center;
+    }
+
+    .footer-section ul li,
+    .footer-contact p,
+    .footer-contact h4{
+
+        justify-content:center;
+    }
+
+}/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+    margin-top:70px;
+    background:#1b1b1b;
+    color:#ffffff;
+}
+
+.footer-container{
+
+    width:min(92%,1280px);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1.2fr
+        1.2fr;
+
+    gap:50px;
+
+    padding:60px 0 45px;
+}
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.footer-section{
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    text-align:left;
+}
+
+.footer-section h2{
+
+    margin:0 0 20px;
+
+    color:#d4af37;
+
+    font-size:34px;
+
+    font-weight:700;
+}
+
+.footer-section h3{
+
+    margin:0 0 22px;
+
+    color:#d4af37;
+
+    font-size:24px;
+
+    font-weight:700;
+}
+
+.footer-section h4{
+
+    margin:20px 0 12px;
+
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-weight:600;
+}
+
+.footer-section p{
+
+    margin:0 0 12px;
+
+    color:#d6d6d6;
+
+    line-height:1.9;
+
+    font-size:15px;
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.footer-section ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+    width:100%;
+}
+
+.footer-section ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:16px;
+}
+
+.footer-section ul li svg{
+
+    width:18px;
+
+    color:#d4af37;
+
+    flex-shrink:0;
+}
+
+.footer-section ul li span{
+
+    color:#e4e4e4;
+}
+
+.footer-section ul li a{
+
+    color:#e4e4e4;
+
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+.footer-section ul li a:hover{
+
+    color:#d4af37;
+
+    padding-left:4px;
+}
+
+/* ==========================================================
+   CONTACT
+========================================================== */
+
+.footer-contact{
+
+    width:100%;
+}
+
+.footer-contact p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:12px;
+}
+
+.footer-contact svg{
+
+    width:18px;
+
+    color:#d4af37;
+
+    flex-shrink:0;
+}
+
+.footer-contact h4{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.footer-contact h4 svg{
+
+    color:#d4af37;
+}
+
+/* ==========================================================
+   BOTTOM
+========================================================== */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:22px 0;
+
+    text-align:center;
+}
+
+.footer-bottom p{
+
+    margin:0;
+
+    color:#bdbdbd;
+
+    font-size:14px;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:992px){
+
+    .footer-container{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:40px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+        text-align:center;
+    }
+
+    .footer-section{
+
+        align-items:center;
+
+        text-align:center;
+    }
+
+    .footer-section ul li,
+    .footer-contact p,
+    .footer-contact h4{
+
+        justify-content:center;
+    }
+
+}

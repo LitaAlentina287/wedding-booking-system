@@ -1,0 +1,185 @@
+/* ==================================================
+   NAVBAR
+================================================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    border-bottom: 2px solid #d4af37;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+
+    height: 75px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.logo {
+    text-decoration: none;
+
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #d4af37;
+
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #b8860b;
+}
+
+
+/* ==================================================
+   NAVIGATION MENU
+================================================== */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu a {
+    position: relative;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #d4af37;
+}
+
+
+/* ==================================================
+   ACTIVE MENU
+================================================== */
+
+.nav-menu a.active {
+    color: #d4af37;
+    font-weight: 700;
+}
+
+.nav-menu a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -10px;
+
+    width: 100%;
+    height: 3px;
+
+    background: #d4af37;
+
+    border-radius: 50px;
+}
+
+
+/* ==================================================
+   ADMIN BUTTON
+================================================== */
+
+.btn-admin {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    border-radius: 30px;
+
+    background: #d4af37;
+
+    color: #ffffff !important;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.btn-admin:hover {
+    background: #b8860b;
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* Tombol Login Admin tidak ikut style active */
+
+.btn-admin.active {
+    color: #ffffff !important;
+}
+
+.btn-admin.active::after {
+    display: none;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .navbar-container {
+        height: auto;
+
+        padding: 20px 0;
+
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        width: 100%;
+
+        margin-top: 20px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .nav-menu a.active::after {
+        bottom: -6px;
+    }
+
+}

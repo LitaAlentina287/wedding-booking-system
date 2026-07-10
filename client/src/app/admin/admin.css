@@ -1,0 +1,166 @@
+/* =========================================================
+   ADMIN LAYOUT
+========================================================= */
+
+.admin-layout{
+    display:flex;
+    min-height:100vh;
+    width:100%;
+    background:
+        linear-gradient(
+            rgba(255,255,255,.55),
+            rgba(255,255,255,.55)
+        ),
+        url("/images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.admin-content{
+    flex:1;
+    margin-left:250px;
+    width:calc(100% - 250px);
+    min-height:100vh;
+    padding:30px;
+    overflow-x:hidden;
+    box-sizing:border-box;
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+.admin-content *,
+.admin-content *::before,
+.admin-content *::after{
+    box-sizing:border-box;
+}
+
+.admin-content img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.admin-content button,
+.admin-content input,
+.admin-content textarea,
+.admin-content select{
+    font-family:inherit;
+}
+
+
+/* =========================================================
+   PAGE WRAPPER
+========================================================= */
+
+.dashboard,
+.categories,
+.packages,
+.bookings,
+.profile{
+    width:100%;
+    min-height:calc(100vh - 60px);
+    padding:30px;
+    background:#f6f7fb;
+    border-radius:22px;
+    overflow-x:hidden;
+    animation:pageFade .3s ease;
+}
+
+
+/* =========================================================
+   PAGE ANIMATION
+========================================================= */
+
+@keyframes pageFade{
+
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:none;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width:992px){
+
+    .admin-content{
+        margin-left:0;
+        width:100%;
+        padding:20px;
+    }
+
+    .dashboard,
+    .categories,
+    .packages,
+    .bookings,
+    .profile{
+        padding:24px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .admin-content{
+        padding:18px;
+    }
+
+    .dashboard,
+    .categories,
+    .packages,
+    .bookings,
+    .profile{
+        padding:20px;
+        border-radius:18px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .admin-content{
+        padding:14px;
+    }
+
+    .dashboard,
+    .categories,
+    .packages,
+    .bookings,
+    .profile{
+        padding:16px;
+        border-radius:16px;
+    }
+
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
