@@ -240,19 +240,6 @@ Halaman ini bersifat informatif dan menggunakan data statis yang dibuat pada fro
 
 ---
 
-# Teknologi yang Digunakan
-
-| Bagian      | Teknologi            |
-| ----------- | -------------------- |
-| Frontend    | Next.js + React.js   |
-| Styling     | CSS                  |
-| HTTP Client | Axios                |
-| Backend     | Node.js + Express.js |
-| Database    | PostgreSQL           |
-| API         | REST API             |
-
----
-
 ## 7. Halaman Login (Admin)
 
 Halaman Login Admin merupakan halaman autentikasi yang digunakan oleh administrator untuk masuk ke dalam sistem pengelolaan Wedding Booking System.
@@ -425,9 +412,22 @@ Fitur logout bertujuan untuk menjaga keamanan sistem, terutama agar akun adminis
 
 ---
 
+# Teknologi yang Digunakan
+
+| Bagian      | Teknologi            |
+| ----------- | -------------------- |
+| Frontend    | Next.js + React.js   |
+| Styling     | CSS                  |
+| HTTP Client | Axios                |
+| Backend     | Node.js + Express.js |
+| Database    | PostgreSQL           |
+| API         | REST API             |
+
+---
+
 # Fitur Aplikasi
 
-## Customer
+## Pelanggan
 
 | No | Fitur            | Deskripsi                             |
 | -- | ---------------- | ------------------------------------- |
