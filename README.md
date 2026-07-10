@@ -146,11 +146,47 @@ Halaman ini berfungsi sebagai proses utama transaksi pada sistem, yaitu menghubu
 
 ---
 
-## Halaman Admin Dashboard
+## 5. Halaman About (Pelanggan)
 
-Halaman admin digunakan untuk mengelola data sistem seperti kategori, paket, dan booking.
+Halaman About merupakan halaman yang digunakan untuk memberikan informasi mengenai aplikasi Wedding Booking System serta layanan wedding yang tersedia.
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
+Pada halaman ini pelanggan dapat mengetahui informasi mengenai profil layanan, tujuan aplikasi, serta gambaran umum mengenai sistem yang dibuat. Halaman About berfungsi sebagai media informasi agar pengguna lebih memahami konsep dan layanan yang ditawarkan oleh Wedding Booking System.
+
+Halaman ini bersifat informatif dan tidak mengambil data dari database, karena konten yang ditampilkan merupakan informasi statis yang dibuat pada sisi frontend menggunakan Next.js.
+
+### Tampilan About 1
+
+![About 1](screenshots/about1.png)
+
+---
+
+### Tampilan About 2
+
+![About 2](screenshots/about2.png)
+
+---
+
+### Tampilan About 3
+
+![About 3](screenshots/about3.png)
+
+---
+
+### Tampilan About 4
+
+![About 4](screenshots/about4.png)
+
+---
+
+### Tampilan About 5
+
+![About 5](screenshots/about5.png)
+
+---
+
+### Tampilan About 6
+
+![About 6](screenshots/about6.png)
 
 ---
 
