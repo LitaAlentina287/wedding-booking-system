@@ -72,7 +72,7 @@ Pada halaman ini pengguna dapat melihat daftar kategori sebelum memilih paket we
 
 ---
 
-## 2. Halaman Packages (Pelanggan)
+## 3. Halaman Packages (Pelanggan)
 
 Halaman Packages merupakan halaman yang digunakan pelanggan untuk melihat daftar paket wedding yang tersedia pada sistem.
 
@@ -106,11 +106,43 @@ Halaman ini membantu pelanggan dalam memilih paket wedding yang sesuai sebelum m
 
 ---
 
-## Halaman Booking
+## 4. Halaman Booking (Pelanggan)
 
-Halaman booking digunakan pelanggan untuk melakukan pemesanan paket wedding dengan mengisi data yang diperlukan.
+Halaman Booking merupakan halaman yang digunakan pelanggan untuk melakukan pemesanan paket wedding yang telah dipilih.
 
-![Booking Page](screenshots/booking.png)
+Pada halaman ini pelanggan mengisi data pemesanan seperti nama pemesan, nomor WhatsApp, tanggal acara, lokasi acara, serta informasi paket wedding yang akan dipesan.
+
+Data booking yang dikirim oleh pelanggan akan diproses melalui backend menggunakan REST API. Frontend Next.js mengirimkan data booking menggunakan Axios ke endpoint `/api/bookings`, kemudian backend Express.js akan menyimpan data tersebut ke database PostgreSQL pada tabel bookings.
+
+Halaman ini berfungsi sebagai proses utama transaksi pada sistem, yaitu menghubungkan pelanggan dengan layanan wedding yang tersedia.
+
+### Tampilan Booking 1
+
+![Booking 1](screenshots/booking1.png)
+
+---
+
+### Tampilan Booking 2
+
+![Booking 2](screenshots/booking2.png)
+
+---
+
+### Tampilan Booking 3
+
+![Booking 3](screenshots/booking3.png)
+
+---
+
+### Tampilan Booking 4
+
+![Booking 4](screenshots/booking4.png)
+
+---
+
+### Tampilan Booking 5
+
+![Booking 5](screenshots/booking5.png)
 
 ---
 
