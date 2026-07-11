@@ -245,13 +245,13 @@ Halaman ini bersifat informatif dan menggunakan data statis yang dibuat pada fro
 
 ## 7. Halaman Login (Admin)
 
-Halaman Login Admin merupakan halaman autentikasi yang digunakan oleh administrator untuk masuk ke dalam sistem pengelolaan Wedding Booking System.
+Halaman Login Admin merupakan halaman autentikasi yang digunakan oleh administrator untuk mengakses halaman pengelolaan Wedding Booking System.
 
-Pada halaman ini admin memasukkan data login berupa username/email dan password. Data tersebut akan dikirimkan ke backend untuk dilakukan proses verifikasi melalui REST API.
+Pada halaman ini, administrator memasukkan email dan password melalui form login yang telah disediakan. Selanjutnya sistem melakukan proses validasi terhadap data yang dimasukkan. Pada implementasi project ini, proses autentikasi masih menggunakan validasi sederhana (hardcode) pada sisi frontend sebagai simulasi login administrator.
 
-Jika data login sesuai dengan data yang tersimpan pada database PostgreSQL, maka admin berhasil masuk ke halaman Dashboard Admin. Namun, jika data yang dimasukkan tidak sesuai, sistem akan memberikan pesan bahwa proses login gagal.
+Apabila email dan password yang dimasukkan sesuai dengan data yang telah ditentukan pada kode program, maka administrator akan diarahkan menuju halaman Dashboard Admin. Sebaliknya, apabila data yang dimasukkan tidak sesuai, sistem akan menampilkan pesan bahwa email atau password yang dimasukkan salah.
 
-Halaman login ini berfungsi untuk menjaga keamanan sistem agar hanya pengguna dengan hak akses admin yang dapat mengelola data kategori, paket wedding, dan booking pelanggan.
+Halaman login ini berfungsi sebagai gerbang akses menuju halaman administrasi sehingga hanya administrator yang dapat mengakses fitur pengelolaan data kategori, paket wedding, serta booking pelanggan.
 
 ### Tampilan Login Admin
 
@@ -454,45 +454,6 @@ Status booking:
 
 ---
 
-# Struktur Folder Project
-
-```
-wedding-booking-system
-
-├── client
-│   ├── src
-│   │   ├── app
-│   │   │   ├── categories
-│   │   │   ├── packages
-│   │   │   ├── booking
-│   │   │   ├── about
-│   │   │   ├── contact
-│   │   │   └── admin
-│   │   │
-│   │   ├── components
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   ├── PackageCard.jsx
-│   │   │   └── BookingForm.jsx
-│   │   │
-│   │   └── services
-│   │       └── api.js
-│   │
-│   └── package.json
-│
-├── server
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── config
-│   ├── server.js
-│   └── package.json
-│
-└── README.md
-```
-
----
-
 # Database
 
 Database yang digunakan adalah **PostgreSQL**.
@@ -545,9 +506,9 @@ Pastikan sudah menginstall:
 
 | Software | Versi (Disarankan) |
 |----------|---------------------|
-| Node.js | v18 atau lebih baru |
-| PostgreSQL | v15 atau lebih baru |
-| Git | Versi terbaru |
+| Node.js | v24.18.0 |
+| PostgreSQL | v18.3 |
+| Git | v2.50.0 |
 
 
 ---
