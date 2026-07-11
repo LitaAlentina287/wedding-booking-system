@@ -592,15 +592,22 @@ DB_NAME=wedding_booking
 
 > **Catatan:** Ganti `PASSWORD_POSTGRES_ANDA` dengan password PostgreSQL yang digunakan pada komputer masing-masing.
 
-### 2.4 Pastikan Database PostgreSQL
+### 2.4 Menyiapkan Database PostgreSQL
 
-Pastikan PostgreSQL telah berjalan dan database berikut telah dibuat:
+Pastikan PostgreSQL telah berjalan.
+Buat database baru dengan nama:
 
 ```text
 wedding_booking
 ```
 
-Import file database (`.sql`) apabila tersedia sehingga seluruh tabel dapat digunakan.
+Selanjutnya, import file database yang telah disediakan pada repository:
+
+```text
+database/wedding_booking.sql
+```
+
+Proses import dapat dilakukan menggunakan pgAdmin 4, psql, atau aplikasi manajemen PostgreSQL lainnya. Setelah proses import selesai, seluruh tabel dan data awal yang dibutuhkan oleh aplikasi akan tersedia pada database.
 
 ### 2.5 Menjalankan Backend
 
