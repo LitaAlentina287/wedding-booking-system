@@ -253,6 +253,9 @@ Apabila email dan password yang dimasukkan sesuai dengan data yang telah ditentu
 
 Halaman login ini berfungsi sebagai gerbang akses menuju halaman administrasi sehingga hanya administrator yang dapat mengakses fitur pengelolaan data kategori, paket wedding, serta booking pelanggan.
 
+- Email: admin@gmail.com
+- Password: 123456
+  
 ### Tampilan Login Admin
 
 ![Login Admin](screenshots/login.png)
@@ -263,9 +266,9 @@ Halaman login ini berfungsi sebagai gerbang akses menuju halaman administrasi se
 
 Halaman Dashboard Admin merupakan halaman utama yang ditampilkan setelah admin berhasil melakukan proses login.
 
-Dashboard berfungsi sebagai pusat informasi dan pengelolaan sistem Wedding Booking System. Pada halaman ini admin dapat melihat ringkasan data penting seperti jumlah kategori, jumlah paket wedding, jumlah booking, dan jumlah pelanggan.
+Dashboard berfungsi sebagai pusat informasi dan pengelolaan sistem Wedding Booking System. Pada halaman ini admin dapat melihat ringkasan data penting seperti jumlah kategori, jumlah paket wedding, jumlah booking, dan jumlah booking yang masih pending.
 
-Selain menampilkan informasi statistik, dashboard juga menyediakan navigasi menuju halaman pengelolaan data seperti Categories, Packages, dan Booking Management.
+Selain menampilkan informasi statistik, dashboard juga menyediakan navigasi menuju halaman pengelolaan data seperti Categories, Packages, Bookings, Profile dan logout.
 
 Data statistik pada dashboard diperoleh dari database PostgreSQL melalui backend Express.js menggunakan REST API. Frontend Next.js mengambil data tersebut menggunakan Axios kemudian menampilkan informasi dalam bentuk kartu statistik dan tabel agar mudah dipahami oleh admin.
 
@@ -291,7 +294,7 @@ Data statistik pada dashboard diperoleh dari database PostgreSQL melalui backend
 
 Halaman Packages Admin digunakan untuk mengelola seluruh data paket wedding yang tersedia pada sistem. Halaman ini hanya dapat diakses oleh administrator setelah berhasil melakukan proses login.
 
-Pada halaman ini admin dapat melakukan operasi **CRUD (Create, Read, Update, Delete)** terhadap data paket wedding. Setiap paket terdiri dari beberapa informasi, seperti nama paket, kategori, harga, deskripsi, dan gambar paket.
+Pada halaman ini admin dapat melakukan operasi **CRUD (Create, Read, Update, Delete)** terhadap data paket wedding. Setiap paket terdiri dari beberapa informasi, seperti nama kategori, dan deskripsi.
 
 Seluruh data paket tersimpan pada database PostgreSQL dan dikelola melalui backend Express.js menggunakan REST API. Frontend Next.js menggunakan Axios untuk mengirim request ke backend sehingga setiap perubahan data dapat langsung tersimpan dan ditampilkan kembali pada sistem.
 
@@ -332,7 +335,7 @@ Seluruh data paket tersimpan pada database PostgreSQL dan dikelola melalui backe
 
 Halaman Bookings Admin digunakan untuk mengelola seluruh data pemesanan (booking) yang dilakukan oleh pelanggan. Halaman ini hanya dapat diakses oleh administrator setelah berhasil melakukan proses login.
 
-Pada halaman ini admin dapat melihat seluruh data booking yang masuk, seperti nama pemesan, paket wedding yang dipilih, tanggal acara, lokasi acara, serta status pemesanan. Selain itu, admin juga dapat mengubah status booking sesuai dengan proses yang sedang berjalan.
+Pada halaman ini admin dapat melihat seluruh data booking yang masuk, seperti nama pemesan, paket wedding yang dipilih, nomor telepon, tanggal acara, lokasi acara, serta status pemesanan. Selain itu, admin juga dapat mengubah status booking sesuai dengan proses yang sedang berjalan.
 
 Seluruh data booking diambil dari database PostgreSQL melalui backend Express.js menggunakan REST API. Frontend Next.js memanfaatkan Axios untuk mengambil dan mengirim data sehingga informasi yang ditampilkan selalu sesuai dengan data yang tersimpan pada database.
 
@@ -426,10 +429,11 @@ Fitur logout bertujuan untuk menjaga keamanan sistem, terutama agar akun adminis
 | No | Fitur            | Deskripsi                             |
 | -- | ---------------- | ------------------------------------- |
 | 1  | Melihat Home     | Menampilkan informasi layanan wedding |
-| 2  | Melihat Packages | Melihat daftar paket wedding          |
-| 3  | Booking          | Melakukan pemesanan paket wedding     |
-| 4  | About            | Melihat informasi aplikasi            |
-| 5  | Contact          | Melihat informasi kontak              |
+| 2  | Melihat Kategori | Melihat daftar kategori wedding       |
+| 3  | Melihat Packages | Melihat daftar paket wedding          |
+| 4  | Booking          | Melakukan pemesanan paket wedding     |
+| 5  | About            | Melihat informasi aplikasi            |
+| 6  | Contact          | Melihat informasi kontak dan lokasi   |
 
 ---
 
@@ -441,8 +445,8 @@ Fitur logout bertujuan untuk menjaga keamanan sistem, terutama agar akun adminis
 | 2  | Dashboard          | Melihat statistik data sistem |
 | 3  | CRUD Categories    | Mengelola kategori wedding    |
 | 4  | CRUD Packages      | Mengelola paket wedding       |
-| 5  | Booking Management | Mengelola data pemesanan      |
-| 6  | Update Status      | Mengubah status booking       |
+| 5  | Booking Management | Mengelola data pemesanan, Update status booking     |
+| 6  | Profile            | Melihat dan Mengedit Profile Admin |
 
 Status booking:
 
@@ -616,9 +620,9 @@ Universitas Teknologi Bandung
 
 # Repository
 
-GitHub:
+- GitHub:
 https://github.com/LitaAlentina287/wedding-booking-system
 
-Youtube Video Demonstrasi aplikasi:
+- Youtube Video Demonstrasi aplikasi:
 https://youtu.be/HHrEaGeTJnw?si=aYTH8t9w6yaNy1p6
 
