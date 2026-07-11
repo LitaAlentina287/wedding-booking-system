@@ -290,11 +290,45 @@ Data statistik pada dashboard diperoleh dari database PostgreSQL melalui backend
 
 ---
 
+## 9. Halaman Categories (Admin)
+
+Halaman Categories Admin digunakan untuk mengelola data kategori wedding yang tersedia pada sistem. Halaman ini hanya dapat diakses oleh administrator setelah berhasil login.
+
+Pada halaman ini admin dapat melakukan operasi **CRUD (Create, Read, Update, Delete)** terhadap data kategori wedding. Seluruh data kategori disimpan pada database PostgreSQL dan dikelola melalui backend Express.js menggunakan REST API.
+
+Frontend Next.js menggunakan Axios untuk mengambil dan mengirim data sehingga perubahan kategori dapat langsung ditampilkan pada aplikasi.
+
+### Fitur Halaman Categories Admin
+
+- Menampilkan seluruh kategori.
+- Menambahkan kategori baru.
+- Mengubah kategori.
+- Menghapus kategori.
+- Menampilkan data kategori terbaru.
+
+### Tampilan Categories Admin 1
+
+![Categories Admin 1](screenshots/categoriesadmin1.png)
+
+---
+
+### Tampilan Categories Admin 2
+
+![Categories Admin 2](screenshots/categoriesadmin2.png)
+
+---
+
+### Tampilan Categories Admin 3
+
+![Categories Admin 3](screenshots/categoriesadmin3.png)
+
+---
+
 ## 10. Halaman Packages (Admin)
 
 Halaman Packages Admin digunakan untuk mengelola seluruh data paket wedding yang tersedia pada sistem. Halaman ini hanya dapat diakses oleh administrator setelah berhasil melakukan proses login.
 
-Pada halaman ini admin dapat melakukan operasi **CRUD (Create, Read, Update, Delete)** terhadap data paket wedding. Setiap paket terdiri dari beberapa informasi, seperti nama kategori, dan deskripsi.
+Pada halaman ini admin dapat melakukan operasi **CRUD (Create, Read, Update, Delete)** terhadap data paket wedding. Setiap paket terdiri dari beberapa informasi, seperti gambar, nama paket, kategori, harga, dan deskripsi.
 
 Seluruh data paket tersimpan pada database PostgreSQL dan dikelola melalui backend Express.js menggunakan REST API. Frontend Next.js menggunakan Axios untuk mengirim request ke backend sehingga setiap perubahan data dapat langsung tersimpan dan ditampilkan kembali pada sistem.
 
@@ -487,7 +521,6 @@ API digunakan sebagai penghubung antara frontend Next.js dengan backend Express.
 
 | Method | Endpoint            | Fungsi                  |
 | ------ | ------------------- | ----------------------- |
-| GET    | /api/users          | Mengambil data user     |
 | GET    | /api/categories     | Mengambil data kategori |
 | POST   | /api/categories     | Menambah kategori       |
 | PUT    | /api/categories/:id | Mengubah kategori       |
