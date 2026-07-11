@@ -502,10 +502,6 @@ API digunakan sebagai penghubung antara frontend Next.js dengan backend Express.
 
 ---
 
-# Cara Menjalankan Project
-
-## Persiapan
-
 Pastikan sudah menginstall:
 
 | Software | Versi (Disarankan) |
@@ -514,99 +510,153 @@ Pastikan sudah menginstall:
 | PostgreSQL | v18.3 |
 | Git | v2.50.0 |
 
+---
+
+# Panduan Menjalankan Project di Lokal
+
+## 1. Clone Repository
+
+Clone repository GitHub ke komputer lokal menggunakan perintah berikut:
+
+```bash
+git clone https://github.com/LitaAlentina287/wedding-booking-system.git
+```
+
+Masuk ke folder project:
+
+```bash
+cd wedding-booking-system
+```
 
 ---
 
-# Menjalankan Backend
+## 2. Menjalankan Backend (Express.js)
 
-Masuk ke folder backend:
+### 2.1 Masuk ke Folder Backend
 
 ```bash
 cd server
 ```
 
-Install dependency:
+### 2.2 Install Seluruh Dependency
 
 ```bash
 npm install
 ```
 
-Buat file `.env` pada folder server:
+### 2.3 Buat File `.env`
+
+Buat file **`.env`** pada folder **server**, kemudian isi dengan konfigurasi database PostgreSQL berikut:
 
 ```env
 PORT=5000
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
-DB_PASSWORD=your_password
+DB_PASSWORD=PASSWORD_POSTGRES_ANDA
 DB_NAME=wedding_booking
 ```
 
-Jalankan backend:
+> **Catatan:** Ganti `PASSWORD_POSTGRES_ANDA` dengan password PostgreSQL yang digunakan pada komputer masing-masing.
 
-```bash
-npm run start
+### 2.4 Pastikan Database PostgreSQL
+
+Pastikan PostgreSQL telah berjalan dan database berikut telah dibuat:
+
+```text
+wedding_booking
 ```
 
-Backend berjalan pada:
+Import file database (`.sql`) apabila tersedia sehingga seluruh tabel dapat digunakan.
 
-```
-http://localhost:5000
-```
+### 2.5 Menjalankan Backend
 
----
-
-# Menjalankan Frontend
-
-Buka terminal baru.
-
-Masuk ke folder frontend:
-
-```bash
-cd client
-```
-
-Install dependency:
-
-```bash
-npm install
-```
-
-Jalankan frontend:
+Mode Development (disarankan):
 
 ```bash
 npm run dev
 ```
 
-Frontend berjalan pada:
+Atau mode biasa:
 
+```bash
+npm start
 ```
+
+Apabila berhasil dijalankan, backend akan berjalan pada:
+
+```text
+http://localhost:5000
+```
+
+---
+
+## 3. Menjalankan Frontend (Next.js)
+
+Buka terminal baru, kemudian masuk ke folder frontend:
+
+```bash
+cd client
+```
+
+### 3.1 Install Seluruh Dependency
+
+```bash
+npm install
+```
+
+### 3.2 Jalankan Frontend
+
+```bash
+npm run dev
+```
+
+Apabila berhasil dijalankan, frontend dapat diakses melalui browser pada alamat:
+
+```text
 http://localhost:3000
 ```
 
 ---
 
-# Konfigurasi API
+## 4. Konfigurasi REST API
 
-Frontend menggunakan Axios untuk melakukan komunikasi dengan backend.
+Frontend berkomunikasi dengan backend menggunakan **Axios** melalui **REST API**.
 
-Konfigurasi API terdapat pada:
+Konfigurasi Axios berada pada file:
 
-```
+```text
 client/src/services/api.js
 ```
 
-Contoh:
+Contoh konfigurasi:
 
 ```javascript
+import axios from "axios";
+
 const api = axios.create({
-    baseURL:"http://localhost:5000/api",
-    headers:{
-        "Content-Type":"application/json"
-    }
+  baseURL: "http://localhost:5000/api",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
+
+export default api;
 ```
 
+Konfigurasi tersebut digunakan agar seluruh halaman pada frontend dapat mengakses endpoint backend tanpa perlu menuliskan alamat API secara berulang.
+
+---
+
+## 5. Akses Aplikasi
+
+Setelah backend dan frontend berhasil dijalankan, aplikasi dapat diakses melalui browser menggunakan alamat berikut.
+
+| Halaman | URL |
+|---------|-----|
+| Halaman Pelanggan | http://localhost:3000/pelanggan |
+| Login Admin | http://localhost:3000/login |
+| Dashboard Admin | http://localhost:3000/admin/menu/dashboard |
 ---
 
 # Author
